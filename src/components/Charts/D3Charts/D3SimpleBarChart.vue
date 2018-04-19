@@ -5,12 +5,12 @@
 </template>
 
 <script>
-// import resize from '../mixins/resize'
+import d3Resize from '../mixins/d3Resize'
 import * as d3 from 'd3'
 import * as d3Tip from 'd3-tip'
 
 export default {
-  // mixins: [resize],
+  mixins: [d3Resize],
   props: {
     className: {
       type: String,
@@ -39,6 +39,9 @@ export default {
   },
   methods: {
     initChart() {
+      if (this.chart) {
+        this.chart.innerHTML = ''
+      }
       const containerWidth = this.chart.parentElement.offsetWidth
       const data = this.data
       const margin = { top: 80, right: 20, bottom: 30, left: 60 }
@@ -200,6 +203,9 @@ export default {
         .attr('x', containerWidth / 2)
         .attr('y', 20)
         .text('本周酒店房间空置率')
+    },
+    resize() {
+      this.initChart()
     }
   }
 }
