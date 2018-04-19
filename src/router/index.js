@@ -128,7 +128,21 @@ export const asyncRouterMap = [
     children: [
       { path: 'keyboard', component: _import('charts/keyboard'), name: 'keyboardChart', meta: { title: 'keyboardChart', noCache: true }},
       { path: 'line', component: _import('charts/line'), name: 'lineChart', meta: { title: 'lineChart', noCache: true }},
-      { path: 'mixchart', component: _import('charts/mixChart'), name: 'mixChart', meta: { title: 'mixChart', noCache: true }}
+      { path: 'mixchart', component: _import('charts/mixChart'), name: 'mixChart', meta: { title: 'mixChart', noCache: true }},
+      {
+        path: '/charts/d3-charts',
+        component: _import('charts/d3-charts/index'),
+        redirect: '/charts/d3-charts/simple-bar-chart',
+        name: 'd3Charts',
+        meta: {
+          title: 'd3Charts',
+          icon: 'chart'
+        },
+        children: [
+          { path: 'simple-bar-chart', component: _import('charts/d3-charts/simpleBarChart'), name: 'simpleBarChart', meta: { title: 'simpleBarChart', noCache: true }},
+          { path: 'simple-line-chart', component: _import('charts/d3-charts/simpleLineChart'), name: 'simpleLineChart', meta: { title: 'simpleLineChart', noCache: true }}
+        ]
+      }
     ]
   },
 
