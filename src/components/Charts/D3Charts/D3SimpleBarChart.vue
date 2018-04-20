@@ -201,7 +201,7 @@ export default {
         .attr('font-weight', '700')
         .attr('text-anchor', 'middle')
         .attr('x', containerWidth / 2)
-        .attr('y', 20)
+        .attr('y', 40)
         .text('本周酒店房间空置率')
     },
     resize() {
