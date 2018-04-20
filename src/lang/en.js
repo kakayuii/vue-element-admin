@@ -26,6 +26,7 @@ export default {
     d3Charts: 'D3 Charts',
     simpleBarChart: 'Simple Bar Chart',
     simpleLineChart: 'Simple Line Chart',
+    simpleLineChartII: 'Simple Line Chart II',
     example: 'Example',
     Table: 'Table',
     dynamicTable: 'Dynamic Table',

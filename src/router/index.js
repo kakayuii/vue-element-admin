@@ -140,7 +140,8 @@ export const asyncRouterMap = [
         },
         children: [
           { path: 'simple-bar-chart', component: _import('charts/d3-charts/simpleBarChart'), name: 'simpleBarChart', meta: { title: 'simpleBarChart', noCache: true }},
-          { path: 'simple-line-chart', component: _import('charts/d3-charts/simpleLineChart'), name: 'simpleLineChart', meta: { title: 'simpleLineChart', noCache: true }}
+          { path: 'simple-line-chart', component: _import('charts/d3-charts/simpleLineChart'), name: 'simpleLineChart', meta: { title: 'simpleLineChart', noCache: true }},
+          { path: 'simple-line-chart-ii', component: _import('charts/d3-charts/simpleLineChartII'), name: 'simpleLineChartII', meta: { title: 'simpleLineChartII', noCache: true }}
         ]
       }
     ]

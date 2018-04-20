@@ -26,6 +26,7 @@ export default {
     d3Charts: 'D3 图表',
     simpleBarChart: '简单柱状图',
     simpleLineChart: '简单线状图',
+    simpleLineChartII: '简单线状图 II',
     example: '综合实例',
     Table: 'Table',
     dynamicTable: '动态Table',
